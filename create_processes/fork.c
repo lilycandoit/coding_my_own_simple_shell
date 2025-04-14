@@ -21,7 +21,7 @@ int main(void)
     printf("My pid is %u\n", my_pid);
     if (child_pid == 0)
     {
-        printf("(%u) Nooooooooo!\n", my_pid);
+        printf("(%u) I'm child!\n", my_pid);
     }
     else
     {
