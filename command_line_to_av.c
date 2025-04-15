@@ -13,6 +13,14 @@ strtok() work:
     NULL when no more tokens are found
 */
 
+/*
+ Use strtok to split a string based on spaces.
+
+Loop until strtok returns NULL.
+
+Print or store each token just like arguments in argv.
+*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -50,3 +58,4 @@ int main(void)
     free(line);
     return 0;
 }
+

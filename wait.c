@@ -1,3 +1,11 @@
+/*
+wait() makes the parent pause until the child process is done.
+
+status is a variable where the child’s exit status will be stored.
+
+It blocks (stops) the parent until the child finishes.
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>

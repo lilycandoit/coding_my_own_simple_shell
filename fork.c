@@ -1,3 +1,14 @@
+/*
+fork()	Creates a new process - creates a copy of your current process (like CLONING)
+So you end up with two processes running the same code:
+the parent and the child.
+
+Returns 0	Inside the child
+Returns child PID	Inside the parent
+Returns -1	If something went wrong
+Used for	Making sure your shell keeps running while a command is executed
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 
