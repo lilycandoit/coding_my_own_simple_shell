@@ -32,8 +32,9 @@ int main(void)
     size_t len = 0;
     ssize_t nread;
 
-    printf("Type anything here: ");
-    fflush(stdout);
+    printf(stdout, "Type anything here: ");
+    // same way: printf("Type anything here: ");
+
 
     nread = getline(&line, &len, stdin);
     if (nread == -1)
