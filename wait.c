@@ -1,8 +1,6 @@
 /*
 wait() makes the parent pause until the child process is done.
 
-status is a variable where the child’s exit status will be stored.
-
 It blocks (stops) the parent until the child finishes.
 */
 
@@ -19,6 +17,7 @@ It blocks (stops) the parent until the child finishes.
 int main(void)
 {
     pid_t child_pid;
+    /* status is a variable where the child’s exit status will be stored. */
     int status;
 
     child_pid = fork();
@@ -34,7 +33,7 @@ int main(void)
     }
     else
     {
-        wait(&status);
+        wait(&status); /* in simple cases, can do: wait(NULL) */
         printf("Oh, it's all better now\n");
     }
     return (0);

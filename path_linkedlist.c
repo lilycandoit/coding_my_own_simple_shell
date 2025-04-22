@@ -43,7 +43,7 @@ path_node *build_path_list(void)
         }
         else // if the list already has nodes
         {
-            tail->next = new_node; // link new_node to the end of list
+            tail->next = new_node; // connect old tail to a new node
             tail = new_node; // add new_node to the end by updating the tail to be new_node
         }
 
@@ -59,7 +59,7 @@ void print_path_list(path_node *head)
     while (head)
     {
         printf("%s\n", head->dir);
-        head = head->next;
+        head = head->next; /* move to next node */
     }
 }
 

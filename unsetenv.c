@@ -3,7 +3,7 @@
 #include "string.h"
 #include "main.h"
 
-// function prototy for setenv
+// function prototype for setenv
 int _setenv(const char *name, const char *value, int overwrite);
 
 /**
@@ -74,4 +74,4 @@ int main(void)
 // passed test => all good
 
 // when test result: gcc unsetenv.c setenv.c -o unsetenv
-// but gott comment the main section in setenv file
+// but gotta comment the main section in setenv file

@@ -36,10 +36,10 @@ int main(void)
         int i = 0;
         char *token = strtok(line, " \n");
 
-        while (token != NULL)
+        while (token)
         {
-            argv[i++] = token;
-            token = strtok(NULL, " \n");
+            argv[i++] = token; /* meaning the 1st argument */
+            token = strtok(NULL, " \n"); /* go to the next token */
         }
         argv[i] = NULL; // execve needs argv to end with NULL
 
